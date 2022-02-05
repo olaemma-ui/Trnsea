@@ -1,0 +1,85 @@
+.nav-link{
+    font-size: x-small;
+    margin-right: 15px;
+    color: black;
+}
+.fa-1-5x{
+    font-size: x-large;
+}
+.banner{
+    /* z-index: -99; */
+    /* position: absolute; */
+    background-image: url("img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.banner-2{
+    /* z-index: -99; */
+    /* position: absolute; */
+    background-image: url("img/banner2.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+@media screen and (max-width: 600px) {
+    .banner-3{
+        height: 100vh;
+    }
+}
+/* @media screen and (min-width: 700px) {
+    .banner-2{
+        height: 80vh;
+    }
+} */
+.banner-3{
+    /* z-index: -99; */
+    /* position: absolute; */
+    background-image: url("img/3434385.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+}
+.bg-warning-hover{
+    background-color: #e3b018;
+    color: white;
+}
+.bg-warning-hover:hover{
+    background-color: black;
+    color: white;
+}
+.btn-white{
+    background-color: white;
+    color: black;
+}
+.btn-white:hover{
+    background-color: black;
+    color: white;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.card:hover{
+    box-shadow: rgba(189, 188, 188, 0.557) 3px 2px 5px 2px;
+    cursor: pointer;
+}
+.line{
+    height: 10px;
+    width: 20px;
+    padding: 10px;
+}
+.bg-black{
+    background-color: rgb(20, 23, 28);
+}
+.card-s{
+    /* box-shadow: rgba(189, 188, 188, 0.263) 0px 0px 2px 2px;    */
+}
+.img{
+    height: 200px;
+}
