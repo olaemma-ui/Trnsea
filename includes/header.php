@@ -9,6 +9,7 @@
     <link rel="stylesheet" href=".\plugins\fontawesome-free-5.14.0-web\css\all.css">
     <link rel="stylesheet" href=".\plugins\style.css">
     <link rel="stylesheet" href=".\style.css">
+    <link rel="shortcut icon" href=".\img\download.webp" type="image/x-icon">
 </head>
 <body>
     <nav class="navbar bg-white justify-content-center justify-content-md-between border">
@@ -25,16 +26,16 @@
                 <a class="text-dark fa-xs" href="https://wa.link/g8etlo"><i class="fab fa-whatsapp"></i> +17207359347</a>
             </li>
             <li class="nav-item fa-xs text-center">
-                <i class="fa fa-map-marker"></i> 3000 youngfield street, Wheat Ridge, CO 80215, USA
+                <i class="fa fa-map-marked-alt"></i> 3000 youngfield street, Wheat Ridge, CO 80215, USA
             </li>
         </ul>
-        
+
     </nav>
     <nav class="navbar navbar-expand-md bg-warning p-0 pl-2 sticky-top">
         <div class="container">
                     <!-- Brand -->
             <a class="navbar-brand text-dark fa-1x" href="index.php">
-                <img src="img/download.webp" class="w-25" alt=""><span class="text-white">Transea</span>    
+                <img src="img/download.webp" class="w-25" alt=""><span class="text-white">Transea</span>
             </a>
 
             <!-- Toggler/collapsibe Button -->
@@ -46,23 +47,23 @@
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-black pt-3 pb-3" href="index.php">HOME</a>
+                        <a class="nav-link text-black pt-3 pb-3 pl-2" href="index.php">HOME</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-black btn-white pt-3 pb-3" href="index.php#project">OUR PROJECT</a>
+                        <a class="nav-link text-black btn-white pl-2 pt-3 pb-3" href="index.php#project">OUR PROJECT</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-black pt-3 pb-3" href="about.php">ABOUT US</a>
+                        <a class="nav-link text-black pt-3 pb-3 pl-2" href="about.php">ABOUT US</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-black pt-3 pb-3" href="index.php#service">OUR SERVICES</a>
+                        <a class="nav-link text-black pt-3 pb-3 pl-2" href="index.php#service">OUR SERVICES</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-black pt-3 pb-3 " href="contact.php">CONTACT US</a>
+                        <a class="nav-link text-black pt-3 pb-3 pl-2" href="contact.php">CONTACT US</a>
                     </li>
                 </ul>
             </div>

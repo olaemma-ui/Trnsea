@@ -3,15 +3,15 @@
             <div class="row justify-content-between">
                 <div class="col-md-3">
                     <a class="navbar-brand text-dark fa-2x" href="index.php">
-                        <img src="img/download.webp" class="w-25" alt=""><span class="text-white">Transea</span>    
+                        <img src="img/download.webp" class="w-25" alt=""><span class="text-white">Transea</span>
                     </a>
                     <p class="text-secondary text-justify fa-xs">
-                        Transea  core values have evolved over more than a decade of providing the highest quality construction services to our clients. 
-                        They have withstood the test of time, and these principles continue to serve as our bedrock lynchpins. We never tried to cut corners on quality, 
+                        Transea  core values have evolved over more than a decade of providing the highest quality construction services to our clients.
+                        They have withstood the test of time, and these principles continue to serve as our bedrock lynchpins. We never tried to cut corners on quality,
                         speed of work, or any other aspect of construction. We keep our full promise of efficiency!
                     </p>
                 </div>
-                
+
                 <div class="col-md-2">
                     <p class="navbar-brand text-white">
                         NAVIGATIONS
@@ -30,19 +30,19 @@
                         </li>
 
                         <a class="navbar-brand text-dark fa-sm text-center mt-3" href="index.php">
-                            <img src="img/download.webp" class="w-25" alt=""><span class="text-white">Transea</span>    
+                            <img src="img/download.webp" class="w-25" alt=""><span class="text-white">Transea</span>
                         </a>
                    </ul>
                 </div>
 
-                <div class="col-md-3 text-light mt-4">   
+                <div class="col-md-3 text-light mt-4">
                    <p class="contact navbar-brand">
                        CONTACTS
                    </p>
 
                    <ul class="nav">
                        <li class="nav-item text-secondary fa-xs d-flex align-items-center">
-                           <i class="fa-lg fa fa-map-marker pr-2"></i> 3000 youngfield street, Wheat Ridge, CO 80215, USA
+                           <i class="fa-lg fa fa-map-marked-alt pr-2"></i> 3000 youngfield street, Wheat Ridge, CO 80215, USA
                        </li>
 
                        <li class="nav-item text-secondary fa-xs d-flex align-items-center mt-3">

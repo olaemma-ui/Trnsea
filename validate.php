@@ -4,7 +4,9 @@
   $gen_err;
   $matric_err = array();
   $matric = array();
+  $text_err = array();
 
+  $text = array();
   $psw = array();
   $email = array();
   $gen;
@@ -42,6 +44,18 @@
         }
         else{
           $name_err[$i] = "All fields are required **";
+        }
+      }
+    }
+
+    if (isset($_POST["text"])) {
+      for ($i=0; $i < count($_POST["text"]); $i++) {
+        if (!empty($_POST["text"][$i])) {
+          $regex = validate($_POST["text"][$i]);
+          $text[$i] = $_POST["text"][$i];
+        }
+        else{
+          $text_err[$i] = "All fields are required **";
         }
       }
     }
@@ -159,17 +173,61 @@
      * Gender Validate
      **/
     if (isset($_POST["gen"])) {
-        if (!empty($_POST["gen"])) {
-          $regex = validate($_POST["gen"]);
-          if (!preg_match("/^[a-zA-Z]*$/", $regex)) {
-            $gen_err = "!!!!";
-          }else{
-            $gen = $_POST["gen"];
-          }
-        }
-        else{
-          $gen_err = "All fields are required **";
+      if (!empty($_POST["gen"])) {
+        $regex = validate($_POST["gen"]);
+        if (!preg_match("/^[a-zA-Z]*$/", $regex)) {
+          $gen_err = "!!!!";
+        }else{
+          $gen = $_POST["gen"];
         }
       }
+      else{
+        $gen_err = "All fields are required **";
+      }
     }
+
+    if (empty($name_err) && empty($email_err) && empty($text_err)) {
+      $msg =
+      '<div class="">
+          <div style="background: #e3b018; padding: 5px; color: white">
+            Transea Customer Messages
+          </div>
+          <div style="padding: 5px; font-family: monospace;">
+            <p>
+              <p>E-mail: </p> '.$email[0].'
+            </p>
+
+            <p>
+              <p>Name: </p> '.$name[0].'
+            </p>
+
+            <p>
+              <p>Message: </p> '.$text[0].'
+            </p>
+          </div>
+      </div>';
+      require 'PHPMailer/PHPMailerAutoload.php';
+      $mail = new PHPMailer;
+      $mail->isSMTP();
+      $mail->isHTML(true);
+      $mail->SMTPSecure = 'ssl';
+      $mail->SMTPAuth = true;
+      $mail->Host = 'transea.org';
+      $mail->Port = 465;
+      $mail->Username = 'transea@transea.org';
+      $mail->Password = 'transea.org';
+      $mail->setFrom('transea@transea.org');
+      $mail->addAddress('transea@transea.org');
+      $mail->Subject = 'Transea Clients Messages';
+      $mail->Body = $msg;
+      //send the message, check for errors
+      if (!$mail->send()) {
+          echo "ERROR: " . $mail->ErrorInfo;
+      } else {
+          echo "SUCCESS";
+      }
+    }else{
+      echo "Invalid/Incomplete Details !!!";
+    }
+  }
 ?>
